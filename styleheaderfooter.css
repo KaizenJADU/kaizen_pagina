@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+.menu .logo img{
+    width: 50px;
+
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #a1a1a1;
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: #ffffff;
+
+
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    text-align: right;
+    margin-top: 100px;
+}
+hr{
+    border: 1px solid #edb312;
+
+}
+.footer-txt{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-txt img{
+    width: 50px;
+
+}
+.links{
+    padding: 50px 0px;
+    text-align: center;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.links p{
+    color: #a1a1a1;
+    margin-top: 25px;
+}
+.links ul li a{
+    color: #a1a1a1;
+}
+.socials{
+    margin-top: 30px;
+}
+.socials img{
+    width: 25px;
+    margin: 0 15px;
+}
