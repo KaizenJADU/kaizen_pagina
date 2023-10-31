@@ -1,101 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaizen</title>
-</head>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-<link rel="stylesheet" href="styleindex.css">
-<link rel="stylesheet" href="styleheaderfooter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleheaderfooter.css">
+    <link rel="stylesheet" href="styleindex.css">
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-                <a href="index.html" class="logo"><img src="imagenes/solo_logo.png" alt="kaizen"></a>
-                <input type="checkbox" id="menu"/>
-                <label for="menu">
-                    <img src="imagenes/menu.png" class="menu-icono" alts="">
-                </label>
-                <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                </nav>
-        </div>
-    </header>
-        <div class="header-content container">
+    <div class="inicio" id="inicio">
+        <header class="encabezado">
+            <nav class="menu navegacion">
 
-            <div class="swiper myswiper-1">
-              
-                  
-                    <div class="mision_vision">
-                        <h4 style="text-align: left;">Misión</h4>
-                        <section class="mision">
-                        <p>Somos una empresa que se enfoca en desarrollar apps móviles y aplicaciones web siempre teniendo un impacto en la sociedad, que se dirige principalmente al sector de la educación y las disyuntivas sociales.  Lograremos esto mediante el esfuerzo y dedicación que le ponemos a cada uno de nuestros programas. 
-                        </p>
-                        <img src="">
-                    </section>
-                    <section class="Vision">
-                        <h4>Visión</h4>
-                        <p>Ser una empresa reconocida nacionalmente por elaborar las mejores apps móviles y servicios web con una calidad excepcional, esforzándonos lo mejor posible en nuestro trabajo para que con el tiempo logremos ser una empresa perfectamente establecida en este medio.
-                        </p>
-                    </section>
-                    <section class="Objetivo">
-                        <h4>Objetivo </h4>
-                        <p>
-                            Llegar a ser la principal empresa en creación de programas computacionales y apps móviles, buscando apoyar a la población en general, obteniendo el máximo beneficio.
-                        </p>
-                    </section>
-                    </div>
-              
-        </div>
-        </div>
-   
+                <figure class="logo kaizen">
+                    <img src="imagenes/solo_logo.png" alt="logo kaizen letra blanca">
+                </figure>
+                <section class="grupo enlinea">
+                    <ul class="menu enlace">
+                        <li>
+                            <a href="index.html#inicio" target="_self">
+                                INICIO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#quienesomos" target="_self">
+                                ¿QUIÉNES SOMOS?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicios.html" target="_self">
+                                SERVICIOS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" target="_self">
+                                CONTÁCTENOS
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+            <section class="banner">
+                <h1 class="titulo">
+                    BIENVENIDO A KAIZEN
+                </h1>
+                <p>
+                    "¿Conoces qué es Kaizen? ¿Sabes quiénes somos? ¿Sabes lo que hacemos? Si respondió NO a una de estas preguntas, esta página es perfecta para ti."
+                </p>
+            </section>
+        </header>
+        <!--===============SECCION QUIENES SOMOS -->
+        <section class="seccion quienes-somos" id="quienesomos">
 
-    <section class="bee">
-
-        <div class="swiper myswiper-2 container">
-
-       
-
-                  
-                            <h4 style="text-align: center;">Somos la mejora Constante</h4>
-                           
-                       
-
-        </div>
-
-    </section>
-
-    <footer class="footer container">
-        <hr>
-        <div class="footer-txt">
-            <img src="imagenes/solo_logo.png" alt="">
-            <div class="links">
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="socials">
-                    <a href="https://www.facebook.com/profile.php?id=100092619345456&mibextid=ZbWKwL"><img src="imagenes/s1.svg" alt="" ></a>
-                    <img src="imagenes/s2.svg" alt="">
+            <!--* GRUPO QUIENES SOMOS INTRODUCCIÓN -->
+            <article class="grupo introduccion">
+                <div class="grupo enlinea">
+                    <h3 class="titulo">
+                        ¿Quiénes somos?
+                        <i class="decoracion"></i>
+                    </h3>
+                    <blockquote>
+                        “Somos la mejora continua”
+                        <footer>- <cite>KAIZEN</cite></footer>
+                    </blockquote>
+                    <p>Kaizen, un equipo formado por cuatro apasionados estudiantes de programación del CECYT 9, que se
+                        esfuerzan por marcar la diferencia en el mundo a través de proyectos con un impacto social
+                        significativo. Nuestra dedicación a la programación no solo es evidente en nuestras habilidades
+                        técnicas, sino también en nuestro compromiso con la mejora constante. Con un espíritu impulsado
+                        por el Kaizen, la filosofía japonesa de la mejora continua, buscamos constantemente
+                        oportunidades para crecer y superarnos.</p>
                 </div>
-                <p> <small>&copy;2023 <b>Kaizen</b> - Todos los Derechos Reservados.</small></p>
-            </div>
-        </div>
-    </footer>
+                <div class="grupo enlinea imagen">
+                    <img src="imagenes/equipo_kaizen.jpeg" alt="" class="logo kaizen">
+                </div>
+            </article><!--FIN GRUPO QUIENES SOMOS INTRODUCCION-->
+
+            <!--* GRUPO QUIENES SOMOS MISION Y VISION -->
+            <article class="grupo mision-vision ">
+                <div class="sub grupo enlinea imagen">
+                    <figure class="ilustracion"></figure>
+                </div>
+                <div class="sub grupo mision">
+                    <h3 class="titulo">
+                        Misión:
+                        <i class="decoracion"></i>
+                    </h3>
+                    <p>Somos una empresa que se enfoca en desarrollar apps móviles y aplicaciones web, siempre teniendo
+                        un impacto en la sociedad. Nos dirigimos principalmente al sector de la educación y las
+                        disyuntivas sociales. Lograremos esto mediante el esfuerzo y dedicación que le ponemos a cada
+                        uno de nuestros programas.
+                    </p>
+                </div>
+                <div class="sub grupo vision">
+                    <h3 class="titulo">
+                        Visión:
+                        <i class="decoracion"></i>
+                    </h3>
+                    <p>Ser una empresa reconocida nacionalmente por elaborar las mejores apps móviles y servicios web
+                        con una calidad excepcional, esforzándonos lo mejor posible en nuestro trabajo para que con el
+                        tiempo logremos ser una empresa perfectamente establecida en este medio.
+                    </p>
+                </div>
+            </article><!--FIN GRUPO QUIENES SOMOS MISION Y VISIÓN-->
+
+            <!--* GRUPO QUIENES SOMOS FUNDADORES -->
+            <article class="grupo fundadores ">
+                <div class="grupo">
+                    <figure class="fotografia"></figure>
+                    <h3 class="titulo">
+                        Alan Leaños (Programador)
+                        <i class="decoracion"></i>
+                    </h3>
+                    <p>Administrador de Empresas de la Universidad de los Andes, con experiencia de 7 años en
+                        análisis financiero de negocios bajo la perspectiva de valor; Rafael es un gran estratega
+                        con grandes habilidades comunicativas y analíticas, lo cual hacen de él, un aliado
+                        importante para los empresarios con decisiones de gran impacto para sus compañías. A lo
+                        largo de su trayectoria profesional ha valorado empresas del sector de salud, hotelero, Real
+                        Estate, automotriz, Retail, franquicias de comidas rápidas, tiendas de ropa, entre otras.
+                        Rafael está liderando, junto con sus socios, la generación de alianzas estratégicas y
+                        búsqueda de nuevos negocios y la consolidación de Binncorp como el Fondo de Capital Privado
+                        No. 1 De Colombia en los próximos 10 años. </p>
+                </div>
+                <div class="grupo">
+                    <figure class="fotografia"></figure>
+                    <h3 class="titulo">
+                        Daniel Mendoza (Analista y Programador)
+                        <i class="decoracion"></i>
+                    </h3>
+                    <p>Economista de la Universidad de los Andes, con Maestría en Finanzas de la misma. David cuenta
+                        con sólidas bases y experiencia en finanzas corporativas y evaluación de proyectos. Ha
+                        desarrollado y liderado análisis financieros bajo el modelo DFA; valoración de empresas por
+                        diferentes métodos; proyección y valoración de activos; modelamiento y valoración de pasivos
+                        (pólizas de seguros), desarrollo y liderazgo de estrategia financiera buscando maximizar
+                        rentabilidad y mitigar riesgos de liquidez y re-inversión buscando la mayor rentabilidad
+                        posible para los accionistas, re-inversión y duración. David ha sido miembro de Juntas
+                        Directivas de las inversiones estratégicas de Axa Colpatria, asesorando a la gerencia en
+                        toma de decisiones de alto impacto. </p>
+                </div>
+                <div class="grupo">
+                    <figure class="fotografia"></figure>
+                    <h3 class="titulo">
+                        Jessica Leal (Analista y Diseñadora)
+                        <i class="decoracion"></i>
+                    </h3>
+                    <p>MBA de NYU y Universidad de Palermo de Argentina, profesional en Finanzas y Relaciones
+                        Internacionales de la Universidad Externado de Colombia; Alejandro está altamente capacitado
+                        para trabajar en áreas de finanzas estructuradas en sector público y financiero, siendo este
+                        último su área de mayor experiencia al trabajar durante 10 años en el sector bancario
+                        colombiano. También ha trabajado acompañando y asesorando la estructuración de proyectos de
+                        Asociaciones Público Privadas para la Gobernación de Cundinamarca, definiendo la
+                        rentabilidad, beneficios económicos para la Instititución, liderando el equipo y
+                        desarrollando mecanismos para hacer más eficiente la gestión del mismo. </p>
+                </div>
+                <div class="grupo">
+                    <figure class="fotografia"></figure>
+                    <h3 class="titulo">
+                        Ulises Perez (Analista y Diseñador)
+                        <i class="decoracion"></i>
+                    </h3>
+                    <p>MBA de NYU y Universidad de Palermo de Argentina, profesional en Finanzas y Relaciones
+                        Internacionales de la Universidad Externado de Colombia; Alejandro está altamente capacitado
+                        para trabajar en áreas de finanzas estructuradas en sector público y financiero, siendo este
+                        último su área de mayor experiencia al trabajar durante 10 años en el sector bancario
+                        colombiano. También ha trabajado acompañando y asesorando la estructuración de proyectos de
+                        Asociaciones Público Privadas para la Gobernación de Cundinamarca, definiendo la
+                        rentabilidad, beneficios económicos para la Instititución, liderando el equipo y
+                        desarrollando mecanismos para hacer más eficiente la gestión del mismo. </p>
+                </div>
+            </article><!--FIN GRUPO QUIENES SOMOS FUNDADORES-->
+
+        </section><!--FIN SECCION QUIENES SOMOS-->
+
+        <!--===============SECCION LOCALIZACION -->
+        <section class="seccion localizacion">
+
+            <!--* GRUPO LOCALIZACION INTRODUCCIÓN -->
+            <article class="grupo introduccion">
+                <h3 class="titulo centrado">
+                    Ubicación Kaizen
+                    <i class="decoracion"></i>
+                </h3>
+            </article><!--FIN GRUPO LOCALIZACION INTRODUCCION-->
+
+            <!--* GRUPO LOCALIZACION -->
+            <article class="grupo mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0.007893348134595984!2d-99.17523342671836!3d19.454060460451533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCECYT%209!5e0!3m2!1sen!2smx!4v1501726202878"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </article><!--FIN GRUPO LOCALIZACION-->
+
+        </section><!--FIN SECCION LOCALIZACION-->
 
 
+        <footer class="pie-de-pagina">
+            <section class="grupo">
+                <div class="subgrupo">
+                    <img class="logo binncorp" src="imagenes/solo_logo.png" alt="logo kaizen">
+                </div>
+                <p>«Queremos ser su mejor aliado para acompañarlo en la creación de riqueza y valor. Si usted gana
+                    nosotros ganamos, si usted pierde nosotros perdemos.»</p>
+                <ul class="menu">
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        +525510479207
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        kaizenJADU@gmail.com
+                    </li>
+                </ul>
+            </section>
+            <section class="grupo copy">
+                <p style="color: white;"> <small>&copy;2023 <b>Kaizen</b> - Todos los Derechos Reservados.</small></p>
+            </section>
+        </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <script src="script.js"></script>
-    
+    </div>
 </body>
+
 </html>

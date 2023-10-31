@@ -1,86 +1,309 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.encabezado,
+.menu a,
+.pie-de-pagina {
+    color: rgb(250, 250, 250)
+}
+
+a {
+    color: rgb(35, 32, 33)
+}
+
+.pie-de-pagina {
+
+    color: rgb(180, 180, 180)
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: rgb(125, 245, 235);
+}
+
+a,
+.pie-de-pagina .fa,
+.seccion.planeacion p i {
+    color: rgb(0, 155, 221)
+}
 
 
-.menu{
+/*---------------------FONDOS*/
+.encabezado,
+.pie-de-pagina,
+.seccion.planeacion {
+    background-color: rgb(35, 32, 33);
+}
+
+.menu.navegacion,
+.encabezado::before {
+    background-color: rgba(35, 32, 33, .5);
+}
+
+.seccion.planeacion::before {
+    background-color: rgba(35, 32, 33, .9);
+}
+
+.pie-de-pagina .copy {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.especialidad,
+.seccion.localizacion {
+    background-color: rgb(245, 245, 245)
+}
+
+
+
+body,
+a,
+cite {
+    font-family: 'montserrat', verdana, sans-serif;
+}
+
+p {
+    font-family: 'raleway', arial, sans-serif;
+}
+
+.banner p,
+blockquote {
+    font-family: 'Droid Serif', georgia, serif;
+}
+
+
+/*FONDO NEGRO CUBRECTOR*/
+.encabezado::before {
+
+    content: '';
     position: absolute;
-    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
     left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-
+    top: 0;
 }
-.menu .logo img{
-    width: 50px;
 
-}
-.menu .navbar ul li{
+/*FONDO IMAGEN CENTRADA*/
+.encabezado *,
+.seccion.planeacion * {
     position: relative;
-    float: left;
-
+    z-index: 2;
 }
 
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #a1a1a1;
-    display: block;
-}
-.menu .navbar ul li a:hover{
-    color: #ffffff;
-
-
-}
-#menu{
-    display: none;
-}
-.menu-icono{
-    width: 25px;
-}
-.menu label{
-    cursor: pointer;
-    display: none;
-}
-.header-content{
-    text-align: right;
-    margin-top: 100px;
-}
-hr{
-    border: 1px solid #edb312;
-
-}
-.footer-txt{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.footer-txt img{
-    width: 50px;
-
-}
-.links{
-    padding: 50px 0px;
+body {
     text-align: center;
 }
-.links ul{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
+
+p {
+    padding: 0.5em 1em;
 }
-.links p{
-    color: #a1a1a1;
-    margin-top: 25px;
+
+a {
+    font-weight: 600;
+    display: inline-block;
 }
-.links ul li a{
-    color: #a1a1a1;
+
+
+blockquote {
+    text-align: right;
 }
-.socials{
-    margin-top: 30px;
+
+blockquote footer {
+    display: block;
+    width: 100%;
 }
-.socials img{
-    width: 25px;
-    margin: 0 15px;
+
+cite {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+
+
+.fa {
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: .5em;
+}
+
+.fa-phone {
+    transform: translateY(0.1em);
+}
+
+
+.grupo.enlinea {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    width: calc(100% - 6.5rem);
+}
+
+.grupo .titulo {
+    position: relative;
+}
+/*=ENCABEZADO=*/
+
+.encabezado {
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    width: 6rem;
+    vertical-align: middle;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.menu.navegacion {
+    width: 100%;
+    padding-top: .4em;
+
+}
+
+.menu .menu {
+    width: 100%;
+}
+
+.menu.enlace a {
+    padding: 0 2vmin;
+}
+
+.banner {
+    padding: 5em 8em;
+    padding: 15vmin 10%;
+    text-align: left;
+}
+
+.banner p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    max-width: 50em;
+    padding: 3em 1em;
+    padding: 3vmin;
+}
+
+
+.encabezado .grupo {
+    text-align: right;
+}
+
+.inicio .banner {
+    text-align: center;
+    padding: 5em 10%;
+    padding: 20vmin 10%;
+}
+
+.inicio .encabezado {
+    height: 100%;
+}
+
+
+.pie-de-pagina .grupo {
+    text-align: center;
+    padding: 2em 5%;
+
+}
+
+.pie-de-pagina blockquote {
+    display: inline-block;
+    padding-left: 1em;
+    vertical-align: middle;
+    width: 70%;
+    width: calc(100% - 6.5em);
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.pie-de-pagina p {
+    padding: 1em 0 1.5em;
+    font-size: 1.2em;
+    padding-left: 0;
+    text-align: center;
+}
+
+.pie-de-pagina .menu {
+    display: inline-block;
+    width: 90%;
+}
+
+.pie-de-pagina .menu li {
+    padding: .5vmin 3vmin;
+    max-width: 30em;
+}
+
+.pie-de-pagina .copy {
+    padding: 1em;
+}
+
+@media (max-width: 960px) {
+    .menu {
+        font-size: 0.9em;
+    }
+
+    .logo {
+        width: 4rem;
+    }
+
+    .indicador {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .inicio .banner {
+        padding: 10vmin 1em;
+    }
+
+    .banner .titulo {
+        font-size: 2.5em;
+        font-size: 9vmin;
+    }
+}
+
+@media (max-width: 700px) {
+    .indicador {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .pie-de-pagina .grupo,
+    .encabezado .navegacion {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .banner {
+        padding: 18vmin 10%;
+    }
+
+    .seccion {
+        padding: 5vmin 5% 12vmin;
+    }
+
+    .seccion.planeacion {
+        padding: 12vmin 5%;
+        min-height: 95vh;
+    }
 }

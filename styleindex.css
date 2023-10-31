@@ -1,114 +1,404 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-*{
-    margin: 0;
+*,
+*::before,
+*:after {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-
 }
-body{
-    background-color: #141414;
-    font-family: 'Poppins', sans-serif;
 
+/*=============================
+COLORES
+=============================*/
+/*---------------------LETRAS*/
+.cta,
+s{    color: rgb(250, 250, 250)
 }
-.container{
-    max-width: 1100px;
+
+a {
+    color: rgb(35, 32, 33)
+}
+
+
+body,
+.quienes-somos blockquote cite {
+    color: rgb(67, 64, 65)
+}
+
+
+
+.seccion.planeacion p {
+    color: rgb(180, 180, 180)
+}
+
+
+
+.pie-de-pagina blockquote{
+    color: rgb(125, 245, 235);
+}
+
+a,
+.pie-de-pagina .fa,
+.seccion.planeacion p i,
+.quienes-somos blockquote {
+    color: rgb(0, 155, 221)
+}
+
+
+/*---------------------FONDOS*/
+
+.fondo-verde-principal,
+.titulo::after {
+    background-color: rgb(125, 245, 235);
+}
+
+
+.mision-vision .ilustracion {
+    background-color: rgb(125, 245, 235);
+}
+
+.banner .titulo {
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
     margin: 0 auto;
-    color: #ffffff;
+    text-shadow: 0 0 80px rgba(125, 245, 235, .5);
+
+
+    background: url(imagenes/animated\ bar.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
 
 }
 
-.mision_vision p {
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/*=============================
+CONTENIDO
+=============================*/
+
+.seccion .grupo.introduccion {
     text-align: justify;
 }
-.mision_vision .mision{
-    display: inline-flex;
-}
 
-.bee{
-    padding: 150px 0px;
-}
-
-.swiper-slide{
-    font-size: 18px;
-    background-color: #121418;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.swiper-button-prev::after{
-    font-size: 25px;
-}
-.swiper-button-next::after{
-    font-size: 25px;
-}
-.swiper-button-next{
-    color: #edb40c;
-
-}
-.swiper-button-prev{
-    color: #edb40c;
-
-}
-.swiper-pagination-bullet{
-    background-color: #747474;
-    opacity: 1;
-}
-.swiper-pagination-bullet-active{
-    background-color: #edb312;
-
-}
-.slider{
-    width: 1100px;
-}
-.enlace{
+.seccion {
+    padding: 3em 5% 5em;
+    padding: 3vmin 5% 5vmin;
     display: inline-block;
-    color: #edb40c;
-    margin-top: 15px;
+    max-width: 1600px;
+    width: 100%;
 }
-.product img{
-    height: 250px;
-}
-.product-txt{
-    margin-top: 25px;
-}
-.product-txt h4{
-    color: #edb40c;
-    font-size: 20px;
-    margin: 0;
-}
-.product-txt p{
-    color: #a1a1a1;
-    font-size: 16px;
-    margin: 0;
 
+.introduccion .titulo {
+    font-weight: 600;
+    font-size: 2.6em;
+    line-height: 1em;
+    padding: 1em 0;
+    position: relative;
+    margin-bottom: 0.5em;
 }
-.nosotros{
-    padding: 80px 0px;
-    background-image: linear-gradient(rgba(20,20,20,1), rgba(20,20,20,0.9));
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nosotros-txt h2{
-    color: #edb40c;
-    font-size: 80px;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 100px;
 
+.titulo .decoracion {
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: .1em;
+    background: rgb(125, 245, 235);
+    /* transform: rotateZ(-45deg); */
+    left: 0;
+    bottom: 10%;
+    box-shadow: 3em 0 rgb(125, 245, 235);
 }
-.nosotros-txt p{
-    color: #ffffff;
-    font-size: 80px;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 100px;
-    
+
+.titulo .decoracion::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: .5em;
+    background: white;
+    height: 0.5em;
+    border: dashed .16em rgb(125, 245, 235);
+    border-radius: 50%;
+    transform: rotateZ(100deg);
+    left: 2.25em;
+    top: -.18em;
 }
-.info{
+
+.introduccion p {
+    padding: 1em 0;
+    font-size: 1.4em;
+}
+
+.servicios .grupo.contenido {
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.servicios .grupo.contenido .servicio {
+    font-size: 1rem;
+    letter-spacing: normal;
+    width: 30%;
+    width: calc(100% / 3);
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.titulo.centrado {
+    text-align: center;
+}
+
+.titulo.centrado .decoracion {
+    left: calc(50% - 1.5em);
+    transform: translateX(-50%);
+}
+
+.seccion.localizacion {
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.grupo.mapa {
+    padding: 0;
+}
+
+
+.inicio .encabezado {
+    height: 90vh;
+}
+
+
+.grupo.mapa iframe {
+    min-width: 30em;
+    height: 40vh;
+    width: 100%;
+    margin-bottom: -0.5em;
+}
+
+.quienes-somos blockquote {
+    text-align: left;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+.quienes-somos blockquote footer {
     text-align: right;
+    display: inline-block;
+    width: 100%;
 }
 
+.quienes-somos blockquote cite {
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+.quienes-somos .introduccion .grupo {
+    width: 55%;
+}
+
+.quienes-somos .introduccion .grupo.imagen {
+    width: 44%;
+    height: 50vmin;
+    margin: 5vmin 0;
+}
+
+.quienes-somos .logo.kaizen {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.seccion.quienes-somos {
+    max-width: 100%;
+    padding: 3em 0;
+}
+
+.quienes-somos>.grupo {
+    padding: 0 10%;
+}
+
+.grupo.mision-vision {
+    font-size: 1.5em;
+    padding: 8vh 10% 8vh 50%;
+    position: relative;
+}
+
+.grupo.mision-vision .titulo {
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: .5em 0;
+}
+
+.grupo.mision-vision p {
+    padding-left: 0;
+}
+
+.mision-vision .sub.grupo {
+    text-align: justify;
+    padding: 1em 0;
+}
+
+.mision-vision .imagen,
+.mision-vision .ilustracion {
+    position: absolute;
+    left: 0;
+    top: 2.5%;
+    height: 95%;
+}
+
+.mision-vision .imagen {
+    width: 45%;
+}
+
+.mision-vision .ilustracion {
+    width: 100%;
+}
+
+.mision-vision .titulo .decoracion {
+    width: 1.5em;
+    box-shadow: 2.5em 0 rgb(125, 245, 235);
+}
+
+.mision-vision .titulo .decoracion::before {
+    left: 1.8em;
+}
+
+.fundadores {
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.quienes-somos .fundadores {
+    padding: 1.5em 10%;
+    padding: 3vmin 10%;
+}
+
+.fundadores .grupo {
+    width: 30%;
+    width: calc(100% / 3);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 2em;
+}
+
+.fundadores .fotografia {
+    display: block;
+    min-height: 25em;
+    height: 40vmin;
+}
+
+.fundadores :nth-child(even) .fotografia {
+    background-color: rgb(240, 240, 240);
+}
+
+.fundadores :nth-child(odd) .fotografia {
+    background-color: rgb(225, 225, 225);
+}
+
+.fundadores .titulo {
+    padding: 1em 0;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.fundadores p {
+    font-size: 1.2em;
+    padding: 1.2em 0;
+}
+
+
+.pie-de-pagina .grupo {
+    text-align: center;
+    padding: 2em 5%;
+}
+
+.pie-de-pagina blockquote {
+    display: inline-block;
+    padding-left: 1em;
+    vertical-align: middle;
+    width: 70%;
+    width: calc(100% - 6.5em);
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.pie-de-pagina p {
+    padding: 1em 0 1.5em;
+    font-size: 1.2em;
+    padding-left: 0;
+    text-align: center;
+}
+
+@media (max-width: 960px) {
+    .menu {
+        font-size: 0.9em;
+    }
+
+    .logo {
+        width: 4rem;
+    }
+
+    .indicador {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .inicio .banner {
+        padding: 10vmin 1em;
+    }
+
+    .banner .titulo {
+        font-size: 2.5em;
+        font-size: 9vmin;
+    }
+}
+
+@media (max-width: 700px) {
+    .indicador {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .pie-de-pagina .grupo,
+    .encabezado .navegacion {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .banner {
+        padding: 18vmin 10%;
+    }
+
+    .seccion {
+        padding: 5vmin 5% 12vmin;
+    }
+
+    .seccion.planeacion {
+        padding: 12vmin 5%;
+        min-height: 95vh;
+    }
+}
