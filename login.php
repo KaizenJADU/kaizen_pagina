@@ -70,12 +70,9 @@
                         }
                     }
                     ?>
-
                 </form> <!-- End Login Form -->
-            </div>
-            
+            </div>   
         </div>
-
     </main>
     <footer>
         <!-- place footer here -->
