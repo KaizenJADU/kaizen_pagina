@@ -1,28 +1,35 @@
-<!DOCTYPE html>
+<?php
+require_once '../validarsesion.php';
+?>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaizen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styleheaderfooter.css">
-    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="../styleheaderfooter.css">
+    <link rel="stylesheet" href="../styleindex.css">
 </head>
 
 <body>
     <header>
-        <div class="company-logo"><img src="imagenes/solo_logo.png"
+        <div class="company-logo"><img src="../imagenes/solo_logo.png"
                 style="width: 16%; vertical-align:text-bottom;">Kaizen
         </div>
         <nav class="navbar">
             <ul class="nav-items">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="acercadenosotros.html" class="nav-link">Acerca de nosotros</a></li>
-                <li class="nav-item"><a href="proyectos.html" class="nav-link">Proyectos</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">Contactanos</a></li>
-                <a href="login.php" class="nav-link"><i class='bx bxs-user-circle' style="font-size: 40px;"></i></a>
+                <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="acercadenosotros.php" class="nav-link">Acerca de nosotros</a></li>
+                <li class="nav-item"><a href="proyectos.php" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="contacto.php" class="nav-link">Contactanos</a></li>
+                <li class="nav-item"><a href="../logout.php" class="nav-link">Bienvenido
+                        <?php echo $_SESSION['user']; ?> Cerrar Sesión
+                    </a></li>
+
+
+                </a>
             </ul>
         </nav>
         <div class="menu-toggle">
@@ -41,7 +48,7 @@
                 </h2>
             </div>
             <div class="home-computer-container">
-                <img class="home-computer" src="imagenes/back.png" style="width: 90%;"
+                <img class="home-computer" src="../imagenes/back.png" style="width: 90%;"
                     alt="a computer in dark with shadow">
             </div>
         </section>
@@ -70,7 +77,7 @@
                             oportunidades para crecer y superarnos.</p>
                     </div>
                     <div class="grupo enlinea imagen">
-                        <img src="imagenes/equipo_kaizen.jpeg" alt="equipo_kaizen"
+                        <img src="../imagenes/equipo_kaizen.jpeg" alt="equipo_kaizen"
                             style="width: 100%; padding-left: .5rem;" class="logo kaizen">
                     </div>
                 </article><!--FIN GRUPO QUIENES SOMOS INTRODUCCION-->
@@ -78,7 +85,7 @@
                 <!--* GRUPO QUIENES SOMOS MISION Y VISION -->
                 <article class="grupo mision-vision ">
                     <div class="sub grupo enlinea imagen">
-                        <img src="imagenes/background.jpg" style="width: 100%;" height="100%">
+                        <img src="../imagenes/background.jpg" style="width: 100%;" height="100%">
                     </div>
                     <div class="sub grupo mision">
                         <h3 class="titulo">
@@ -117,10 +124,10 @@
             <div class="footer-item">
                 <h2 class="footer-title">Empresa</h2>
                 <div class="footer-items">
-                    <h3><a href="index.html">Home</a></h3>
-                    <h3><a href="acercadenosotros.html">Acerca de nosotros</a></h3>
-                    <h3><a href="proyectos.html">Proyectos</a></h3>
-                    <h3><a href="contacto.html">Contactanos</a></h3>
+                    <h3><a href="index.php">Home</a></h3>
+                    <h3><a href="acercadenosotros.php">Acerca de nosotros</a></h3>
+                    <h3><a href="proyectos.php">Proyectos</a></h3>
+                    <h3><a href="contacto.php">Contactanos</a></h3>
                 </div>
             </div>
             <!-- footer item 3 -->
@@ -158,7 +165,7 @@
             <div class="copyright">copyright © 2023 - Present • <b>Kaizen</b></div>
         </div>
     </footer>
-    <script src="scriptindex.js"></script>
+    <script src="../scriptindex.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,171 @@
+<?php
+require_once '../validarsesion.php';
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Acerca de Nosotros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styleacercadenosotros.css">
+</head>
+
+<body>
+    <header>
+        <div class="logito" style="padding-top: .2rem;"><img src="../imagenes/solo_logo.png"
+                style="width: 16%; vertical-align:text-bottom;">Kaizen
+        </div>
+        <nav class="barra">
+            <ul class="item">
+                <li class="itembar"><a href="index.php" class="linkbar">Home</a></li>
+                <li class="itembar"><a href="acercadenosotros.php" class="linkbar">Acerca de nosotros</a></li>
+                <li class="itembar"><a href="proyectos.php" class="linkbar">Proyectos</a></li>
+                <li class="itembar"><a href="contacto.php" class="linkbar">Contactanos</a></li>
+                <li class="itembar"><a href="../logout.php" class="linkbar">Bienvenido
+                        <?php echo $_SESSION['user']; ?> Cerrar Sesión
+                    </a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-x"></i>
+        </div>
+    </header>
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Acerca de nosotros
+            </div>
+            <div id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <h1>Alan Leaños</h1>
+                            <img src="../imagenes/alan.jpeg" class="img-circle img-responsive" />
+                            <p>Alan, a sus 17 años, es un apasionado programador que se destaca en el equipo.
+                                Actualmente, cursa el quinto semestre de su carrera de programación. Desde una edad
+                                temprana, desarrolló un amor por la programación y la
+                                resolución de problemas tecnológicos.
+
+                                A pesar de su juventud, Alan demuestra una fuerte ética de trabajo y un deseo constante
+                                de aprender y mejorar. Su contribución al equipo Kaizen es esencial para el éxito de los
+                                proyectos que emprenden. </p>
+                            <h4>Programador</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <h1>Daniel Mendoza</h1>
+                            <img src="../imagenes/dani.jpeg" class="img-circle img-responsive" />
+                            <p>Daniel es un talentoso analista y programador que, a sus 17 años, ya ha demostrado un
+                                gran potencial en el mundo de la tecnología. Además de ser un apasionado de la
+                                programación, Daniel es un dedicado deportista. Su capacidad para equilibrar sus
+                                habilidades técnicas con su pasión por el deporte es verdaderamente impresionante.
+
+                                Como estudiante y miembro clave del equipo de Kaizen, Daniel se encuentra en su
+                                elemento. Ha demostrado ser un resuelto analista de problemas y programador, siempre
+                                dispuesto a asumir desafíos técnicos con entusiasmo. Su capacidad para pensar de manera
+                                lógica y creativa le ha permitido destacarse en el campo de la tecnología. </p>
+                            <h4>Programador Y Analista</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <h1>Jessica Leal</h1>
+                            <img src="../imagenes/jess.jpeg" class="img-circle img-responsive" />
+                            <p>Jess es una joven de 17 años que se destaca como una talentosa analista y diseñadora en
+                                el equipo de Kaizen. Su creatividad y pasión por el diseño se combinan con una mente
+                                analítica y un enfoque meticuloso.
+
+                                Como estudiante y miembro integral del equipo Kaizen, Jess ha demostrado ser una
+                                pensadora innovadora. Su habilidad para analizar problemas y diseñar soluciones
+                                visualmente atractivas es impresionante. Jess aporta una perspectiva única a cada
+                                proyecto, combinando su conocimiento técnico con su sensibilidad estética.</p>
+                            <h4>Analista Y Diseñadora</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <h1>Ulises Perez</h1>
+                            <img src="../imagenes/upa.jpeg" class="img-circle img-responsive" />
+                            <p>Ulises es un talentoso diseñador que ocupa una posición central en nuestro equipo. Su
+                                pasión por el diseño y su creatividad sin límites lo han convertido en un activo
+                                invaluable para el equipo Kaizen.
+
+                                Además de ser un diseñador excepcional, Ulises es un apasionado por la innovación y la
+                                tecnología. Ulises es una parte integral de nuestro equipo y su contribución es esencial
+                                para llevar a cabo nuestros proyectos con éxito. .</p>
+                            <h4>Diseñador</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="top-footer">
+
+            <!-- footer item 1 -->
+            <div class="footer-item">
+                <h2 class="footer-title">Empresa</h2>
+                <div class="footer-items">
+                    <h3><a href="index.php">Home</a></h3>
+                    <h3><a href="acercadenosotros.php">Acerca de nosotros</a></h3>
+                    <h3><a href="proyectos.php">Proyectos</a></h3>
+                    <h3><a href="contacto.php">Contactanos</a></h3>
+                </div>
+            </div>
+            <!-- footer item 3 -->
+            <div class="footer-item">
+                <h2 class="footer-title">Contáctanos</h2>
+                <div class="footer-items">
+
+                    <h3><i class='bx bxs-phone' style="padding-right: .5rem;"></i><a href="tel:+525510479207">+52
+                            5510479207</a></h3>
+                    <br>
+                    <h3><i class='bx bx-map' style="padding-right: .5rem;"></i><a
+                            href="https://maps.app.goo.gl/eXxpRCUwcAH5iDPM9">Centro Estudios
+                            Científicos y Tecnológicos<br>"Juan de Dios Bátiz"</a>
+
+                    </h3><br>
+                    <h3><i class='bx bxs-envelope' style="padding-right: .5rem;"></i><a
+                            href="mailto:kaizenJADU@gmail.com">kaizenJADU@gmail.com</a>
+                    </h3>
+
+                </div>
+            </div>
+            <!-- footer item 4 -->
+            <div class="footer-item">
+                <h2 class="footer-title">Redes sociales</h2>
+                <div class="footer-items">
+                    <h1><i class='bx bxl-instagram-alt' style="padding: 1rem;"></i><i class='bx bxl-twitter'
+                            style="padding: 1rem;"></i><i class='bx bxl-github' style="padding: 1rem;"></i><i
+                            class='bx bxl-facebook-circle' style="padding: 1rem;"></i>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="end-footer">
+            <div class="copyright">copyright © 2023 - Present • <b>Kaizen</b></div>
+        </div>
+    </footer>
+    <script src="../scriptindex.js"></script>
+</body>
+
+</html>

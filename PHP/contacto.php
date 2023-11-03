@@ -1,30 +1,35 @@
-<!doctype html>
+<?php
+require_once '../validarsesion.php';
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Contactanos</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylecontacto.css">
+    <link rel="stylesheet" href="../stylecontacto.css">
 </head>
+
 
 <body>
     <header>
-        <div class="logito" style="padding-top: .2rem;"><img src="imagenes/solo_logo.png"
+        <div class="logito" style="padding-top: .2rem;"><img src="../imagenes/solo_logo.png"
                 style="width: 16%; vertical-align:text-bottom;">Kaizen
         </div>
         <nav class="barra">
             <ul class="item">
-                <li class="itembar"><a href="index.html" class="linkbar">Home</a></li>
-                <li class="itembar"><a href="acercadenosotros.html" class="linkbar">Acerca de nosotros</a></li>
-                <li class="itembar"><a href="proyectos.html" class="linkbar">Proyectos</a></li>
-                <li class="itembar"><a href="contacto.html" class="linkbar">Contactanos</a></li>
-                <a href="login.php" class="linkbar"><i class='bx bxs-user-circle'
-                        style="font-size: 40px;  padding-top: 1.2rem;"></i></a>
+                <li class="itembar"><a href="index.php" class="linkbar">Home</a></li>
+                <li class="itembar"><a href="acercadenosotros.php" class="linkbar">Acerca de nosotros</a></li>
+                <li class="itembar"><a href="proyectos.php" class="linkbar">Proyectos</a></li>
+                <li class="itembar"><a href="contacto.php" class="linkbar">Contactanos</a></li>
+                <li class="itembar"><a href="../logout.php" class="linkbar">Bienvenido
+                        <?php echo $_SESSION['user']; ?> Cerrar Sesión
+                    </a></li>
             </ul>
         </nav>
         <div class="menu-toggle">
@@ -126,15 +131,16 @@
         </section>
     </main>
     <footer>
-        <div class=" top-footer">
+        <div class="top-footer">
+
             <!-- footer item 1 -->
             <div class="footer-item">
                 <h2 class="footer-title">Empresa</h2>
                 <div class="footer-items">
-                    <h3><a href="index.html">Home</a></h3>
-                    <h3><a href="acercadenosotros.html">Acerca de nosotros</a></h3>
-                    <h3><a href="proyectos.html">Proyectos</a></h3>
-                    <h3><a href="contacto.html">Contactanos</a></h3>
+                    <h3><a href="index.php">Home</a></h3>
+                    <h3><a href="acercadenosotros.php">Acerca de nosotros</a></h3>
+                    <h3><a href="proyectos.php">Proyectos</a></h3>
+                    <h3><a href="contacto.php">Contactanos</a></h3>
                 </div>
             </div>
             <!-- footer item 3 -->
@@ -172,7 +178,7 @@
             <div class="copyright">copyright © 2023 - Present • <b>Kaizen</b></div>
         </div>
     </footer>
-    <script src="scriptindex.js"></script>
+    <script src="../scriptindex.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

@@ -1,93 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+
 *,
 *::before,
-*:after {
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*=============================
-COLORES
-=============================*/
-/*---------------------LETRAS*/
-.cta,
-s{    color: rgb(250, 250, 250)
+/* ================= VARIABLE ================ */
+:root {
+    --primary-color: #7DF5EB;
+    --primary-color-alt: #C1F5EB;
+    --second-color: #3e537c;
+    --second-color-alt: hsla(220, 33%, 36%, 65%);
+    --third-color: hsl(220, 36%, 28%);
+    --white-color: #fbfbfb;
+    --white-color-alt: hsl(12, 14%, 93%);
+    --dark-color: hsl(300, 100%, 0%);
+}
+
+/* ================= BASE ==================== */
+li {
+    list-style: none;
 }
 
 a {
-    color: rgb(35, 32, 33)
-}
-
-
-body,
-.quienes-somos blockquote cite {
-    color: rgb(67, 64, 65)
+    text-decoration: none;
 }
 
 
 
-.seccion.planeacion p {
-    color: rgb(180, 180, 180)
+.container {
+    padding: 0 2rem;
+}
+
+/* -- BODY -- */
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    background-color: var(--white-color);
+}
+
+/* ================= MAIN ================ */
+
+/* -------- HOME SECTION -------------- */
+.section-1 {
+    background-color: var(--dark-color);
+    display: grid;
+}
+
+/* .home-computer-container {} */
+
+.slogan .company-title {
+    background: -webkit-linear-gradient(120deg,
+            var(--primary-color-alt),
+            var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.home-computer-container {
+    padding-left: 10rem;
+    padding-bottom: 3rem;
+}
+
+.slogan .company-slogan {
+    background: -webkit-linear-gradient(120deg,
+            var(--primary-color-alt),
+            var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
 }
 
 
+/* =============== MEDIA QUERIES ======= */
 
-.pie-de-pagina blockquote{
-    color: rgb(125, 245, 235);
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 3rem;
+    }
+
 }
 
-a,
-.pie-de-pagina .fa,
-.seccion.planeacion p i,
+@media (min-width: 769px) {
+    header {
+        padding: 1rem 1rem;
+    }
+
+    /* -------- HOME SECTION -------------- */
+    .section-1 {
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        padding: 10rem 5rem 6rem 5rem;
+    }
+
+    .slogan .company-title {
+        max-width: 30rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .slogan .company-slogan {
+        max-width: 30rem;
+        font-size: 1.3rem;
+    }
+
+    .top-footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 8rem;
+        padding-top: 2rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .footer-items h3 {
+        font-size: 1rem;
+    }
+
+    .end-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--dark-color);
+    }
+
+    .copyright {
+        color: hsla(0, 0%, 98%, 0.747);
+        padding: 1rem 0;
+        font-size: 0.8rem;
+    }
+
+    .copyright b {
+        font-size: 0.7rem;
+    }
+
+    .designer {
+        color: hsla(0, 0%, 98%, 0.322);
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 375px) {}
+
 .quienes-somos blockquote {
-    color: rgb(0, 155, 221)
+    color: rgb(0, 155, 221);
+}
+
+.color-svg-azul,
+.binnicon.statsup,
+.especialidad .pilamonedas {
+    fill: rgb(0, 155, 221);
 }
 
 
-/*---------------------FONDOS*/
 
 .fondo-verde-principal,
-.titulo::after {
-    background-color: rgb(125, 245, 235);
+.indicador .titulo::after {
+    background-color: rgb(126, 145, 30);
 }
 
-
+.fondo-verde-brillante,
+.cta,
+.valoracion:hover .icon-container,
 .mision-vision .ilustracion {
-    background-color: rgb(125, 245, 235);
-}
-
-.banner .titulo {
-    font: 700 4em/1 "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: .25em 0 .325em;
-    display: block;
-    margin: 0 auto;
-    text-shadow: 0 0 80px rgba(125, 245, 235, .5);
-
-
-    background: url(imagenes/animated\ bar.png) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-
-
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-
-
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
+    background-image: url(imagenes/background.jpg);
 
 }
 
-@-webkit-keyframes aitf {
-    0% {
-        background-position: 0% 50%;
-    }
+/*=============================
+ESTILOS GENERALES
+=============================*/
 
-    100% {
-        background-position: 100% 50%;
-    }
+.grupo.enlinea {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    width: calc(100% - 6.5rem);
 }
+
+/*=============================
+ENCABEZADO
+=============================*/
 
 /*=============================
 CONTENIDO
@@ -95,14 +202,6 @@ CONTENIDO
 
 .seccion .grupo.introduccion {
     text-align: justify;
-}
-
-.seccion {
-    padding: 3em 5% 5em;
-    padding: 3vmin 5% 5vmin;
-    display: inline-block;
-    max-width: 1600px;
-    width: 100%;
 }
 
 .introduccion .titulo {
@@ -114,83 +213,12 @@ CONTENIDO
     margin-bottom: 0.5em;
 }
 
-.titulo .decoracion {
-    position: absolute;
-    display: block;
-    width: 2em;
-    height: .1em;
-    background: rgb(125, 245, 235);
-    /* transform: rotateZ(-45deg); */
-    left: 0;
-    bottom: 10%;
-    box-shadow: 3em 0 rgb(125, 245, 235);
-}
-
-.titulo .decoracion::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: .5em;
-    background: white;
-    height: 0.5em;
-    border: dashed .16em rgb(125, 245, 235);
-    border-radius: 50%;
-    transform: rotateZ(100deg);
-    left: 2.25em;
-    top: -.18em;
-}
 
 .introduccion p {
     padding: 1em 0;
     font-size: 1.4em;
 }
 
-.servicios .grupo.contenido {
-    font-size: 0;
-    letter-spacing: 0;
-}
-
-.servicios .grupo.contenido .servicio {
-    font-size: 1rem;
-    letter-spacing: normal;
-    width: 30%;
-    width: calc(100% / 3);
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-}
-
-.titulo.centrado {
-    text-align: center;
-}
-
-.titulo.centrado .decoracion {
-    left: calc(50% - 1.5em);
-    transform: translateX(-50%);
-}
-
-.seccion.localizacion {
-    max-width: 100%;
-    padding: 0;
-    position: relative;
-}
-
-.grupo.mapa {
-    padding: 0;
-}
-
-
-.inicio .encabezado {
-    height: 90vh;
-}
-
-
-.grupo.mapa iframe {
-    min-width: 30em;
-    height: 40vh;
-    width: 100%;
-    margin-bottom: -0.5em;
-}
 
 .quienes-somos blockquote {
     text-align: left;
@@ -210,7 +238,8 @@ CONTENIDO
 }
 
 .quienes-somos .introduccion .grupo {
-    width: 55%;
+    width: 50%;
+    padding-left: 5rem;
 }
 
 .quienes-somos .introduccion .grupo.imagen {
@@ -219,21 +248,9 @@ CONTENIDO
     margin: 5vmin 0;
 }
 
-.quienes-somos .logo.kaizen {
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-left: 50px;
-}
-
 .seccion.quienes-somos {
     max-width: 100%;
     padding: 3em 0;
-}
-
-.quienes-somos>.grupo {
-    padding: 0 10%;
 }
 
 .grupo.mision-vision {
@@ -245,7 +262,7 @@ CONTENIDO
 .grupo.mision-vision .titulo {
     font-size: 1.7em;
     font-weight: 600;
-    padding: .5em 0;
+    padding: 0.5em 0;
 }
 
 .grupo.mision-vision p {
@@ -260,145 +277,16 @@ CONTENIDO
 .mision-vision .imagen,
 .mision-vision .ilustracion {
     position: absolute;
-    left: 0;
+    left: 4%;
     top: 2.5%;
     height: 95%;
 }
 
 .mision-vision .imagen {
-    width: 45%;
+    width: 40%;
+
 }
 
 .mision-vision .ilustracion {
     width: 100%;
-}
-
-.mision-vision .titulo .decoracion {
-    width: 1.5em;
-    box-shadow: 2.5em 0 rgb(125, 245, 235);
-}
-
-.mision-vision .titulo .decoracion::before {
-    left: 1.8em;
-}
-
-.fundadores {
-    font-size: 0;
-    letter-spacing: 0;
-}
-
-.quienes-somos .fundadores {
-    padding: 1.5em 10%;
-    padding: 3vmin 10%;
-}
-
-.fundadores .grupo {
-    width: 30%;
-    width: calc(100% / 3);
-    display: inline-block;
-    vertical-align: top;
-    font-size: 1rem;
-    text-align: justify;
-    padding: 2em;
-}
-
-.fundadores .fotografia {
-    display: block;
-    min-height: 25em;
-    height: 40vmin;
-}
-
-.fundadores :nth-child(even) .fotografia {
-    background-color: rgb(240, 240, 240);
-}
-
-.fundadores :nth-child(odd) .fotografia {
-    background-color: rgb(225, 225, 225);
-}
-
-.fundadores .titulo {
-    padding: 1em 0;
-    font-weight: 600;
-    font-size: 1.3em;
-}
-
-.fundadores p {
-    font-size: 1.2em;
-    padding: 1.2em 0;
-}
-
-
-.pie-de-pagina .grupo {
-    text-align: center;
-    padding: 2em 5%;
-}
-
-.pie-de-pagina blockquote {
-    display: inline-block;
-    padding-left: 1em;
-    vertical-align: middle;
-    width: 70%;
-    width: calc(100% - 6.5em);
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-.pie-de-pagina p {
-    padding: 1em 0 1.5em;
-    font-size: 1.2em;
-    padding-left: 0;
-    text-align: center;
-}
-
-@media (max-width: 960px) {
-    .menu {
-        font-size: 0.9em;
-    }
-
-    .logo {
-        width: 4rem;
-    }
-
-    .indicador {
-        width: 50%;
-        font-size: 0.8rem;
-    }
-
-    .inicio .banner {
-        padding: 10vmin 1em;
-    }
-
-    .banner .titulo {
-        font-size: 2.5em;
-        font-size: 9vmin;
-    }
-}
-
-@media (max-width: 700px) {
-    .indicador {
-        width: 100%;
-        font-size: 0.8rem;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .pie-de-pagina .grupo,
-    .encabezado .navegacion {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .banner {
-        padding: 18vmin 10%;
-    }
-
-    .seccion {
-        padding: 5vmin 5% 12vmin;
-    }
-
-    .seccion.planeacion {
-        padding: 12vmin 5%;
-        min-height: 95vh;
-    }
 }
