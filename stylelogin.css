@@ -461,7 +461,6 @@ form.sign-up__form {
 /* When Sign Up Mode Is Active\ Sign Up Side */
 .wrapper__area.sign-up__Mode-active .login__aside-info {
     /* Login Aside */
-    margin-top: -650px;
     opacity: 0;
 }
 
