@@ -62,11 +62,11 @@
                         <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
                         <small class="input__error_message" id="confirmPasswordError"></small>
                         <div id="confirmPasswordErrorMessage" class="error-message"></div>
+                        Ya tienes cuenta <a href="login.php" style="text-decoration: none;">Inicia sesión</a>
                     </div>
                     <!-- Sign Up Button -->
                     <input type="submit" class="submit-button" id="signUpSubmitBtn" value="Crear Cuenta"
                         name="registrar">
-
                     <?php
                     require 'PHP/conexion.php';
                     $message = '';
@@ -89,18 +89,6 @@
                     ?>
                 </form> <!-- End Sign Up Form -->
             </div><!-- End Forms Area -->
-
-            <!-- Aside Area -->
-            <div class=" aside__area" id="aside_Area">
-
-                <div class="sign-up__aside-info">
-                    <h4>Bienvenido</h4><br><br>
-                    <img src="../imagenes/ima3.png" alt="Image">
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
-                    <a href="login.php" style=" text-decoration: none"><button id="aside_signIn_Btn">¡Inicia
-                            Sesión!</button></a>
-                </div>
-            </div>
         </div>
     </main>
     <script>

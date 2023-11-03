@@ -5,7 +5,7 @@
     --body-BG-color: #AEE8FF;
     --wrapper-shadow-color: rgba(255, 255, 255, 0.439);
     --aside-area-BG-color: #377BFA;
-    --aside-area-width: 330px;
+    --aside-area-width: 40px;
     --error-color: rgb(231, 76, 60);
     --success-color: rgb(46, 204, 113);
     --primary-light-gray: rgb(184, 180, 180);
@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* End Css Reset */
@@ -56,6 +57,8 @@ body {
     height: 100%;
     background-color: transparent;
     margin-right: 10px;
+    
+    
 }
 
 /* Form */
@@ -67,6 +70,7 @@ body {
     padding: 20px 20px 10px 20px;
     transition: 1.2s cubic-bezier(0.18, 0.02, 0.36, 0.96);
     opacity: 1;
+    padding-left: 3.5rem;
 }
 
 
@@ -76,6 +80,7 @@ form .form__title {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .sign-up__form .form__title {

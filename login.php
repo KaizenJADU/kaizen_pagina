@@ -40,6 +40,7 @@
                         <span class="input__icon"><i class="bx bx-lock"></i></span>
                         <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
                         <small class="input__error_message"></small>
+                        ¿No tienes cuenta? <a href="signup.php" style="text-decoration: none;">Crea una</a>
                     </div>
                     <!-- Login Button -->
                     <input type="submit" class="submit-button" name="login" id="loginSubmitBtn" value="inicar sesión">
@@ -72,15 +73,7 @@
 
                 </form> <!-- End Login Form -->
             </div>
-            <div class="aside__area" id="aside_Area">
-                <div class="login__aside-info">
-                    <h4>Hola</h4><br><br>
-                    <img src="../imagenes/ima2.png" alt="image">
-                    <p>Introduce tus datos personales y comienza tu viaje con nosotros.</p>
-                    <a href="signup.php" style="text-decoration: none"><button
-                            id="aside_signUp_Btn">¡Regístrate!</button></a>
-                </div>
-            </div>
+            
         </div>
 
     </main>
