@@ -404,8 +404,8 @@ section {
 }
 
 .single-input-fieldsbtn input[type="submit"] {
-    background: #fda40b none repeat scroll 0 0;
-    color: #fff;
+    background: #7DF5EB none repeat scroll 0 0;
+    color: black;
     display: inline-block;
     font-weight: 600;
     padding: 10px 0;
@@ -418,7 +418,8 @@ section {
 .single-input-fieldsbtn input[type="submit"]:hover {
     background: #071c34;
     transition: all 0.4s ease-in-out 0s;
-    border-color: #071c34
+    border-color: #071c34;
+    color: #fff;
 }
 
 .single-input-field h4 {
